@@ -1,0 +1,24 @@
+general:
+  permissions:
+    - 'timedwings.unlimited'
+    - 'essentials.fly'
+    - 'cmi.command.fly'
+
+  # Worlds where temporary flight time is not checked
+  disabled-worlds:
+    - 'disabled-world'  # In this world, flight time is not checked, meaning unlimited flight is possible.
+
+  # Regions where temporary flight time is not checked
+  disabled-regions:
+    - 'disabled-region'
+
+  action-bar:
+    enabled: true
+    duration-format: '{h} {m} {s}'
+
+    always-display: false
+    message: "&eFlight Mode: {flightmode} &8| &6Remaining Flight Time: &e{duration}"
+
+    flight-mode:
+      enabled: "&a&lEnabled"
+      disabled: "&c&lDisabled"

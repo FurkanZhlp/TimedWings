@@ -1,0 +1,25 @@
+general:
+  permissions:
+    - 'timedwings.unlimited'
+    - 'essentials.fly'
+    - 'cmi.command.fly'
+
+  # Worlds where temporary flight time is not checked
+  disabled-worlds:
+    - 'disabled-world'  # In this world, flight time is not checked, meaning unlimited flight is possible.
+
+  # Regions where temporary flight time is not checked
+  disabled-regions:
+    - 'disabled-region'  # In this region, flight time is not checked, meaning unlimited flight is possible.
+
+  action-bar:
+    enabled: true  # Displays the remaining flight time in the action bar at the bottom of the screen.
+    duration-format: '{h} {m} {s}'  # Format for duration: hours, minutes, and seconds.
+
+    # Determines whether the action bar message is always displayed.
+    always-display: false  # If false, it is only displayed when flight time decreases or a command is executed.
+    message: "&eFlight Mode: {flightmode} &8| &6Remaining Flight Time: &e{duration}"  # The format of the message that displays the remaining flight time to the player.
+
+    flight-mode:
+      enabled: "&a&lEnabled"
+      disabled: "&c&lDisabled"
